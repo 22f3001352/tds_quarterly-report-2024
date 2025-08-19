@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Q3 2024 Financial Report</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h2>Q3 2024 Quarterly Earnings Report</h2>
+                <p>Delivering Value, Driving Growth</p>
+                <p><small>Presented by: [Your Name]</small></p>
+                <p><small>Contact: 22f3001352@ds.study.iitm.ac.in</small></p>
+                <aside class="notes">
+                    Welcome everyone to our Q3 earnings report. This quarter has been pivotal for us. We'll dive into the numbers and strategic progress.
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Financial Highlights
+
+                    * **Revenue Growth:** We saw a significant increase in revenue this quarter, driven by strong performance in our digital and retail banking segments.
+                    * **Profitability:** Net profit margin improved due to operational efficiencies and disciplined cost management.
+                    * **Strategic Investments:** We continue to invest in key areas like FinTech and cybersecurity to secure future growth.
+
+                    ---
+
+                    ### Performance Metrics
+                    
+                    | Metric | Q3 2023 | Q3 2024 |
+                    | :--- | :--- | :--- |
+                    | Total Revenue | $1.2B | $1.5B |
+                    | Net Profit | $250M | $320M |
+                    | EPS | $0.75 | $0.95 |
+                </textarea>
+                <aside class="notes">
+                    This slide provides a high-level summary of our key performance indicators for the quarter. Note the consistent growth across all major metrics.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Quarterly Performance Breakdown</h2>
+                <ul>
+                    <li class="fragment fade-up">Digital Banking Revenue: **+25%** year-over-year.</li>
+                    <li class="fragment fade-up">Wealth Management Assets: Grew by **18%**, reaching a new all-time high.</li>
+                    <li class="fragment fade-up">Retail Customer Base: Added **500,000** new customers, with a focus on younger demographics.</li>
+                </ul>
+                <aside class="notes">
+                    Let's break down the performance by business segment. I want to highlight the incredible growth in our digital banking sector and the expansion of our retail customer base.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Code for Automated Reporting</h2>
+                <p>We've implemented a Python script to automate quarterly data extraction and analysis.</p>
+                <pre><code data-trim data-noescape>
+                    import pandas as pd
+                    
+                    # Load financial data from a CSV file
+                    df = pd.read_csv('quarterly_data.csv')
+                    
+                    # Calculate key metrics
+                    df['net_profit_margin'] = (df['net_income'] / df['total_revenue']) * 100
+                    
+                    # Print results for the latest quarter
+                    latest_quarter = df.iloc[-1]
+                    print(f"Net Profit Margin for Q3: {latest_quarter['net_profit_margin']:.2f}%")
+                </code></pre>
+                <aside class="notes">
+                    This is a snippet of the code we're now using. It helps us streamline our data processing and generate reports much faster, reducing manual errors.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Financial Modeling</h2>
+                <p>We use the **Capital Asset Pricing Model (CAPM)** to assess the expected return on our investments.</p>
+                $$ E(R_i) = R_f + \beta_i (E(R_m) - R_f) $$
+                <p>Where:</p>
+                <ul>
+                    <li class="fragment fade-in">$E(R_i)$ is the expected return on the asset.</li>
+                    <li class="fragment fade-in">$R_f$ is the risk-free rate of return.</li>
+                    <li class="fragment fade-in">$\beta_i$ (beta) is the volatility of the asset relative to the market.</li>
+                    <li class="fragment fade-in">$E(R_m)$ is the expected return of the market.</li>
+                </ul>
+                <aside class="notes">
+                    This equation helps us determine if a new investment offers a suitable return for the level of risk involved. It's a fundamental part of our portfolio management strategy.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Looking Ahead</h2>
+                <p>With our strong Q3 performance and strategic focus, we are well-positioned for continued growth in the coming quarter.</p>
+                <aside class="notes">
+                    In conclusion, we're confident in our direction. Thank you all for your time and continued support. I'm happy to take any questions.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
